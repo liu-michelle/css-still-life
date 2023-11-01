@@ -26,6 +26,21 @@
     border: 1px solid red;
   }
   
+  .caf-middle {
+    width: 90%;
+    height: 55%;
+    background-image: linear-gradient(90deg, rgba(255,122,0,1) 0%,
+    rgba(214,110,15,1) 24%, rgba(241,143,49,1) 25%,
+    rgba(242,138,37,1) 46%, rgba(255,122,0,1) 46%,
+    rgba(242,138,38,1) 55%, rgba(214,110,15,1) 69%,
+    rgba(238,126,24,1) 70%);
+    position: absolute;
+    top: 10%;
+    left: 6%;
+    z-index: -2;
+    transform: perspective(300px) rotateX(-30deg);
+  }
+  
   .bustello {
     width: 180px;
     height: 230px;
@@ -42,8 +57,9 @@
   
   .right-can {
     position: absolute;
-    top: 120px;
-    left: 200px;
+    top: 140px;
+    left: 220px;
+    z-index: -1;
   }
   
   .cup {
@@ -69,7 +85,7 @@
   
   .third-cup {
     position: absolute;
-    top: 30px;
+    top: 50px;
     left: 230px;
     z-index: 10;
   }
@@ -97,11 +113,11 @@
   .stripes {
     background-image: linear-gradient(#0432ff 49%, #feffff 50%);
     background-size: 100% 40%;
-    width: 90%;
+    width: 100%;
     height: 90%;
     position: absolute;
     top: 5%;
-    left: 10%;
+    left: 0%;
     z-index: -1;
   }
 
@@ -109,7 +125,9 @@
 
 
 <div class="frame">
-	<div class="cafetera"></div>
+	<div class="cafetera">
+    <div class="caf-middle"></div>
+  </div>
   <div class="bustello left-can"></div>
   <div class="bustello right-can"></div>
   <div class="cup top-cup">
